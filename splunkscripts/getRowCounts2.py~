@@ -1,0 +1,57 @@
+#!/usr/bin/env	python
+# author:  josh parsons, architect PI
+# date: 2014-01-06
+# EDW table sizes for splunk input.
+
+
+
+
+import pyodbc
+import os, sys, time
+from datetime import date
+
+timestr = time.strftime("%Y-%m-%d %H:%M:%S")
+filestr = timestr
+
+# File setup
+fcntsout = open('/home/n0083510/workspace/python/splunkscripts/hist/'+filestr+'.txt','w')
+
+# TD Setup
+dconn = 'DRIVER={Teradata};DBCNAME=TPPMPBI;UID=PM_EDW_SPLUNK_READ;PWD=vBpMa1Di;QUIETMODE=YES;'
+targetdb = 'PM_EDW_MSTR_D'
+stmt1 = """LOCKING  ROW FOR ACCESS SELECT CURRENT_DATE AS LOGDATE, TVM.tvmname AS TABLENAME, sum(CurrentPermSpace) as TABSIZE \
+FROM DBC.DataBaseSpace INNER JOIN DBC.TVM ON TVM.DatabaseId = DataBaseSpace.DatabaseId AND TVM.TVMId = DataBaseSpace.TableId \
+where TVM.DatabaseId = '00002504'xb GROUP BY 1,2;"""
+stmt2 = """LOCKING ROW FOR ACCESS SELECT cast(count(*)as BigInt) AS ROWCNTS FROM PM_EDW_MSTR_D."""
+
+
+
+pyodbc.pooling = False
+
+# Run the statements and generate output to fcntsout
+try:
+	cnx = pyodbc.connect(dconn, autocommit = True, ansi = True)
+	cursor = cnx.cursor()
+	cursor.execute(stmt1)
+	rows1 = cursor.fetchall()
+	for row1 in rows1:
+		cursor.execute(stmt2+row1[1]+""";""")
+		rows2 = cursor.fetchall()
+   		for row2 in rows2:
+			fcntsout.writelines(str(row1[0])+' 00:00:00'+' loaddate='+str(row1[0])+' name='+row1[1]+' cnt='+str(row2[0])+' size='+str(row1[2])+' database='+targetdb+'\n')
+	fcntsout.close()
+
+
+# Catch the exception. 
+except pyodbc.Error,e: 
+	sys.stderr.write('Database Connection Error!\n')
+	sys.exit(2)
+	
+# Close the cursor and connection 
+finally:
+	cursor.close()
+	cnx.close()
+	
+
+     
+

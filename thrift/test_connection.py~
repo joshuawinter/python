@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+import sys
+
+from hive_service import ThriftHive
+from hive_service.ttypes import HiveServerException
+from thrift import Thrift
+from thrift.transport import TSocket
+from thrift.transport import TTransport
+from thrift.protocol import TBinaryProtocol
+
+try:
+    transport = TSocket.TSocket('vxkit-phdp0002', 10000)
+    transport = TTransport.TBufferedTransport(transport)
+    protocol = TBinaryProtocol.TBinaryProtocol(transport)
+
+    client = ThriftHive.Client(protocol)
+    transport.open()
+
+    #client.execute("CREATE TABLE r(a STRING, b INT, c DOUBLE)")
+    #client.execute("LOAD TABLE LOCAL INPATH '/path' INTO TABLE r")
+    client.execute("use pm_hdp_weather")
+    client.execute("select * from claims_events limit 10000")
+    while (1):
+      row = client.fetchOne()
+      if (row == None):
+        break
+      print row
+    client.execute("select * from claims_events limit 10000")
+    print client.fetchAll()
+
+    transport.close()
+
+except Thrift.TException, tx:
+    print '%s' % (tx.message)
+

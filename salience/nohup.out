@@ -1,0 +1,9 @@
+Initializing
+Lexalytics Salience 5.0.6132 x86-64 (Component: SalienceFive) (Branch: /branches/Salience-5.0/projects) (Built: Sun Dec 25 21:27:18 EST 2011) (Host: infonic3002.infonic.com) 
+Preparing Text...
+Traceback (most recent call last):
+  File "se5Python.py", line 153, in <module>
+    demo()
+  File "se5Python.py", line 39, in demo
+    ret = SE5.prepareTextFromFile(session,"/home/n0083510/workspace/python/salience/xaa")
+EnvironmentError: Sentence contains too many words.

@@ -1,0 +1,19 @@
+#!/usr/local/bin/python2.7
+
+
+import xml.etree.ElementTree as ET
+
+
+tree = ET.parse('/home/n0083510/workspace/hadoop/weblogs/mstrweb/MSTRLog12272010_1.log')
+doc = tree.getroot()
+
+lst = []
+
+for record in doc.findall('record'):
+	for elem in record.iter():
+		elem.find('record')
+		lst.append(elem.tag)
+print lst
+
+
+

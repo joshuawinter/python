@@ -1,0 +1,32 @@
+#!/usr/bin/python
+
+
+
+import saliencefive as SE5
+
+# Define the path to Lexalytics root installation
+LXA_HOME = '/opt/lexalytics/salience-5.0.6132'
+
+print 'Initializing'
+print SE5.getVersion()
+
+session = SE5.openSession(LXA_HOME+'/license.v5',LXA_HOME+'/data')
+SE5.setOption_FailOnLongSentences(session,0)
+	
+#Prepare the text.
+print 'Preparing Text...'
+ret = SE5.prepareTextFromFile(session,"/home/n0083510/workspace/python/NOTEStst.data")
+
+
+if (ret == 0):
+	print '\nDocument Statistics:'
+	# Get the document details.
+	details = SE5.getDocumentDetails(session)
+	print 'Number of words: %s' % details['word_count']
+	print 'Number of sentences: %s' % details['sentence_count']
+else:
+	if (ret > 0):
+		print SE5.getLastWarnings(session) 
+
+SE5.closeSession(session)
+

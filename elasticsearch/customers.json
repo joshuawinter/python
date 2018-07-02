@@ -1,0 +1,28 @@
+{
+    "type" : "csv",
+    "csv_file" : {
+        "folder" : "/data/workspace/python/elasticsearch/data",
+        "filename_pattern" : ".*\\.csv$",
+        "poll":"5m",
+        "fields" : [
+"CSTMR_NBR",
+"CSTMR_SID",
+"CSTMR_ID",
+TCT_DESC",
+"DO_NOT_CALL_IND"    
+        ],
+        "first_line_is_header" : "true",
+        "field_separator" : ",",
+        "field_id" : "id",
+        "escape_character" : ";",
+        "quote_character" : "'",
+        "concurrent_requests" : "1"
+    },
+    "index" : {
+        "index" : "customers",
+        "type" : "csv_type",
+        "bulk_size" : 100,
+        "bulk_threshold" : 10
+    }
+}
+

@@ -1,0 +1,18 @@
+/bin/sh: root: command not found
+/bin/sh: /data/workspace/python/splunkscripts/getRowCounts.py: Permission denied
+Database Connection Error!
+Traceback (most recent call last):
+  File "/data/workspace/python/splunkscripts/getRowCounts.py", line 67, in <module>
+    cursor.close()
+NameError: name 'cursor' is not defined
+Database Connection Error!
+Traceback (most recent call last):
+  File "/data/workspace/python/splunkscripts/getRowCounts.py", line 67, in <module>
+    cursor.close()
+NameError: name 'cursor' is not defined
+python: can't open file 'getRowCounts.py': [Errno 2] No such file or directory
+Database Connection Error!
+Traceback (most recent call last):
+  File "/data/workspace/python/splunkscripts/getRowCounts.py", line 67, in <module>
+    cursor.close()
+NameError: name 'cursor' is not defined

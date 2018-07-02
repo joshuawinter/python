@@ -1,0 +1,35 @@
+#!/usr/bin/python
+
+
+import urllib2, re, time, pprint, csv
+
+#############proxy setup
+proxy = urllib2.ProxyHandler({'ftp':'http://n0083510:1976slHb@www-proxy:80'})
+opener = urllib2.build_opener(proxy,urllib2.FTPHandler)
+urllib2.install_opener(opener)
+
+#############get raw lookup data
+file = open('ish-history.csv','w')
+url = 'ftp://ftp.ncdc.noaa.gov/pub/data/noaa/ish-history.csv'
+response = urllib2.urlopen(url)
+file.writelines(response)
+file.close()
+
+
+states =  ('NJ','MA','CT','RI','DE','MD','NH','NY','ME','DC','VA')
+yr = '2012'
+csvFile = csv.reader(open('ish-history.csv', 'rU'), delimiter=',')
+baseurl = 'ftp://ftp.ncdc.noaa.gov/pub/data/noaa/2012/'
+
+
+for lines in csvFile:
+	if lines[3] == 'US' and lines[5] in states:
+		usaf, wban, station, ctry, fips, state, call, lat, lon, elev, btime, etime = lines
+		#print usaf, wban, station, ctry, fips, state, call, lat, lon, elev, btime, etime
+		response = urllib2.urlopen(baseurl)
+		print response
+		
+
+
+
+

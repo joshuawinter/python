@@ -1,0 +1,37 @@
+{
+    "type" : "csv",
+    "csv_file" : {
+        "folder" : "/data/workspace/python/elasticsearch/data/csw",
+        "filename_pattern" : ".*\\.csv$",
+        "poll":"5m",
+        "fields" : [
+"PARTY ROW ID", 
+"VISION ID", 
+"GBID", 
+"FIRST NAME", 
+"LAST NAME", 
+"MIDDLE NAME", 
+"GENERATION CODE", 
+"ADDRESS", 
+"CITY", 
+"STATE", 
+"ZIP", 
+"POLICY NUMBER", 
+"EMAIL", 
+"PHONE",
+"LAST UPDATE DATE"   
+        ],
+        "first_line_is_header" : "true",
+        "field_separator" : ",",
+        "field_id" : "id",
+        "escape_character" : ";",
+        "quote_character" : "'",
+        "concurrent_requests" : "1"
+    },
+    "index" : {
+        "index" : "csw_search",
+        "type" : "csv_type",
+        "bulk_size" : 100,
+        "bulk_threshold" : 10
+    }
+}

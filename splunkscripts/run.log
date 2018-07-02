@@ -1,0 +1,12 @@
+  File "/data/workspace/python/splunkscripts/getRowCounts.py", line 7
+    SELECT CAST(DM_ROW_PRCS_DTM AS DATE), COUNT(*) 
+              ^
+SyntaxError: invalid syntax
+  File "/data/workspace/python/splunkscripts/getRowCounts.py", line 7
+    SELECT CAST(DM_ROW_PRCS_DTM AS DATE), COUNT(*) 
+              ^
+SyntaxError: invalid syntax
+  File "/data/workspace/python/splunkscripts/getRowCounts.py", line 7
+    SELECT CAST(DM_ROW_PRCS_DTM AS DATE), COUNT(*) 
+              ^
+SyntaxError: invalid syntax

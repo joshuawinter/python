@@ -1,0 +1,50 @@
+#!/usr/bin/env python
+
+import zipfile, os, sys, subprocess
+
+for infilenames in os.listdir('/home/n0083510/scratchspace/207.115.82.98/RawDataFiles/Teletrac/'):
+os.mkdir('outdir')
+fh = open('test.zip','rb')
+z = zipfile.ZipFile(fh)
+for name in z.namelist():
+    outfile = open('outdir'+'/'+name, 'wb')
+    outfile.write()
+    outfile.close()
+fh.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for infilenames in os.listdir('/home/n0083510/scratchspace/207.115.82.98/RawDataFiles/Teletrac/'):
+
+          #sys.stdout.write(outstr)
+          cmd = "sudo -u hdfs hadoop fs -put /tele/teletrac/source/" + infilenames + " /tele/teletrac/source/" 
+          #print cmd
+
+          p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+          buffer=f.read(CHUNKSIZE)
+

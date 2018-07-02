@@ -1,0 +1,641 @@
+SystemNo	1
+Environment	DEV
+LPAR	PN85KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        1120.00    921.38   18%    11676     6% /
+/dev/hd2        2624.00    271.91   90%    47127    41% /usr
+/dev/hd9var     1024.00    712.95   31%     8865     6% /var
+/dev/hd3        2048.00   2046.83    1%       13     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     94.08   27%      250     2% /util
+/dev/auditfs     128.00    101.00   22%        8     1% /audit
+/dev/bmc        1024.00    470.44   55%     4690     5% /opt/bmc
+/dev/users       512.00    507.56    1%       10     1% /users
+/dev/local       512.00    382.33   26%      405     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    446.92   90%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.14    1%       27     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    15360.00  15297.34    1%        4     1% /oracle
+
+SystemNo	2
+Environment	DEV
+LPAR	PN86KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    153.48   57%    11677    25% /
+/dev/hd2        2624.00    271.32   90%    47127    41% /usr
+/dev/hd9var     1024.00    712.90   31%     8865     6% /var
+/dev/hd3        2048.00   2046.88    1%        9     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     94.08   27%      250     2% /util
+/dev/auditfs     128.00    101.01   22%        8     1% /audit
+/dev/bmc        1024.00    477.80   54%     4691     5% /opt/bmc
+/dev/users       512.00    507.56    1%       10     1% /users
+/dev/local       512.00    382.33   26%      405     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    452.24   89%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    15360.00  15297.34    1%        4     1% /oracle
+
+SystemNo	3
+Environment	TEST
+LPAR	PN87KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        1120.00    921.43   18%    11670     6% /
+/dev/hd2        2624.00    271.46   90%    47127    41% /usr
+/dev/hd9var     1024.00    712.99   31%     8863     6% /var
+/dev/hd3        2048.00   2043.79    1%       12     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     94.11   27%      250     2% /util
+/dev/auditfs     128.00    101.08   22%        8     1% /audit
+/dev/bmc        1024.00    477.25   54%     4690     5% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    382.32   26%      405     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.39    1%        8     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    514.16   88%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.23    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    15360.00  15297.34    1%        4     1% /oracle
+
+SystemNo	4
+Environment	TEST
+LPAR	PN88KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        1120.00    921.44   18%    11670     6% /
+/dev/hd2        2624.00    271.30   90%    47127    41% /usr
+/dev/hd9var     1024.00    712.97   31%     8863     6% /var
+/dev/hd3        2048.00   2043.78    1%       16     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     94.11   27%      250     2% /util
+/dev/auditfs     128.00    101.07   22%        8     1% /audit
+/dev/bmc        1024.00    476.30   54%     4690     5% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    382.32   26%      405     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    449.65   90%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    15360.00  15297.34    1%        4     1% /oracle
+
+SystemNo	5
+Environment	TEST
+LPAR	PN89KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        2048.00   1849.39   10%    11662     3% /
+/dev/hd2        2624.00    277.72   90%    47126    41% /usr
+/dev/hd9var     1024.00    708.14   31%     8863     6% /var
+/dev/hd3        5120.00   5115.26    1%       17     1% /tmp
+/dev/hd1         128.00    127.27    1%      138     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     84.23   35%      251     2% /util
+/dev/auditfs     128.00     99.73   23%        8     1% /audit
+/dev/bmc        1024.00    457.25   56%     4692     5% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    384.82   25%      403     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    417.62   90%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    81920.00  81587.22    1%        4     1% /oracle
+
+SystemNo	6
+Environment	TEST
+LPAR	PN8AKDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        2048.00   1849.43   10%    11659     3% /
+/dev/hd2        2624.00    277.79   90%    47126    41% /usr
+/dev/hd9var     1024.00    708.25   31%     8862     6% /var
+/dev/hd3        5120.00   5115.26    1%       14     1% /tmp
+/dev/hd1         128.00    127.27    1%      138     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     84.31   35%      251     2% /util
+/dev/auditfs     128.00     99.76   23%        8     1% /audit
+/dev/bmc        1024.00    459.59   56%     4691     5% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    384.84   25%      403     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    406.59   91%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    81920.00  81587.22    1%        4     1% /oracle
+
+SystemNo	7
+Environment	PROD
+LPAR	PN90PDC
+
+SystemNo	8
+Environment	PROD
+LPAR	PN91PDC
+
+SystemNo	9
+Environment	TEST
+LPAR	PN92KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    154.01   57%    11556    24% /
+/dev/hd2        2624.00    418.12   85%    46613    32% /usr
+/dev/hd9var     1024.00    709.42   31%     8845     6% /var
+/dev/hd3        1024.00   1019.85    1%       13     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8935    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.49    1%       27     1% /DR
+/dev/TS_util     128.00     94.55   27%      250     2% /util
+/dev/auditfs     128.00    100.62   22%        8     1% /audit
+/dev/bmc        1024.00    517.00   50%     4686     4% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    384.82   25%      403     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    652.83   85%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       68     1% /pmadmin
+085a-nas-cl1-c2:/PM_MDM_TechUpgrade_NAS_Test01 102400.00 102392.25    1%       97     1% /opt/trillium
+
+SystemNo	10
+Environment	TEST
+LPAR	PN94KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    153.89   57%    11556    24% /
+/dev/hd2        2624.00    417.65   85%    46613    32% /usr
+/dev/hd9var     1024.00    709.35   31%     8844     6% /var
+/dev/hd3        1024.00   1019.69    1%       20     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8935    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.49    1%       27     1% /DR
+/dev/TS_util     128.00     94.55   27%      253     2% /util
+/dev/auditfs     128.00    100.71   22%        8     1% /audit
+/dev/bmc        1024.00    519.36   50%     4685     4% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    384.82   25%      403     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    577.05   86%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       68     1% /pmadmin
+085a-nas-cl1-c2:/PM_MDM_TechUpgrade_NAS_Test01 102400.00 102392.25    1%       97     1% /opt/trillium
+
+SystemNo	11
+Environment	TEST
+LPAR	PN95KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    152.68   57%    11715    25% /
+/dev/hd2        2624.00    368.19   86%    46634    35% /usr
+/dev/hd9var     2336.00   2020.56   14%     8880     2% /var
+/dev/hd3        1024.00   1017.89    1%       14     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8940    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.35    2%       27     1% /DR
+/dev/TS_util     128.00     94.29   27%      251     2% /util
+/dev/auditfs     128.00     79.68   38%        8     1% /audit
+/dev/bmc        1024.00    486.07   53%     4690     5% /opt/bmc
+/dev/users       512.00    507.53    1%       26     1% /users
+/dev/local       512.00    384.84   25%      406     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    3104.00   3087.86    1%      471     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    521.33   88%        6     1% /local_backup
+/dev/apps         32.00     22.73   29%       24     1% /usr/apps
+/dev/bladelogic   2048.00   2043.99    1%      109     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/oracle11g   7680.00   4706.53   39%    12336     2% /oracle/product
+085a-nas-cl1-c2:/PM_MDM_TechUpgrade_NAS_Test02 307200.00 307177.29    1%       97     1% /opt/infamdm
+/dev/appserver_70   6144.00   4257.60   31%    27474     3% /opt/WebSphere/70/AppServer
+/dev/deployment_70   6144.00   4247.52   31%    28220     3% /opt/WebSphere/70/DeploymentManager
+/dev/was_logs_70   3072.00   1919.54   38%       26     1% /was_logs/70
+/dev/app_prop_70    512.00    507.60    1%        4     1% /was_app_properties/70
+/dev/work_70    4096.00   4079.05    1%        4     1% /was_work/70
+/dev/stage_70   1024.00   1011.86    2%        6     1% /was_staging_area/70
+/dev/app_temp_70    512.00    507.60    1%        4     1% /app_temp/70
+/dev/archive_70   1024.00   1015.52    1%        4     1% /was_archive_area/70
+/dev/trace_70   2048.00   2039.35    1%        5     1% /was_trace/70
+/dev/backup_70   5120.00   3641.33   29%       11     1% /was_backup/70
+/dev/cores_70   5120.00   5097.98    1%        4     1% /was_cores/70
+/dev/sib_70     1024.00   1015.52    1%        4     1% /was_SIB/70
+/dev/pso_70     1024.00   1015.52    1%        4     1% /was_PSO/70
+/dev/sharedlib_70   1024.00   1015.52    1%        4     1% /was_sharedLib/70
+/dev/util_mware   2048.00   1683.39   18%     2883     1% /util/mware
+/dev/opt_wily   3072.00   3004.11    3%      264     1% /opt/wily
+
+SystemNo	12
+Environment	TEST
+LPAR	PN96KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    152.51   57%    11701    25% /
+/dev/hd2        2624.00    417.12   85%    46617    32% /usr
+/dev/hd9var     2336.00   2021.45   14%     8883     2% /var
+/dev/hd3        1024.00   1017.36    1%       22     1% /tmp
+/dev/hd1         128.00    127.28    1%      136     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8939    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.35    2%       27     1% /DR
+/dev/TS_util     128.00     94.30   27%      254     2% /util
+/dev/auditfs     128.00     91.38   29%        8     1% /audit
+/dev/bmc        1024.00    483.79   53%     4685     5% /opt/bmc
+/dev/users       512.00    507.54    1%       25     1% /users
+/dev/local       512.00    384.83   25%      406     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    3072.00   3056.91    1%      467     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    531.93   88%        6     1% /local_backup
+/dev/apps         32.00     22.73   29%       24     1% /usr/apps
+/dev/bladelogic   2048.00   2044.55    1%       85     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/oracle11g   7680.00   4706.55   39%    12332     2% /oracle/product
+085a-nas-cl1-c2:/PM_MDM_TechUpgrade_NAS_Test02 307200.00 307177.29    1%       97     1% /opt/infamdm
+/dev/appserver_70   6144.00   4257.82   31%    27411     3% /opt/WebSphere/70/AppServer
+/dev/was_logs_70   3072.00   3054.20    1%       25     1% /was_logs/70
+/dev/app_prop_70    512.00    507.60    1%        4     1% /was_app_properties/70
+/dev/work_70    4096.00   4079.05    1%        4     1% /was_work/70
+/dev/stage_70   1024.00   1015.52    1%        4     1% /was_staging_area/70
+/dev/app_temp_70    512.00    507.60    1%        4     1% /app_temp/70
+/dev/archive_70   1024.00   1015.52    1%        4     1% /was_archive_area/70
+/dev/trace_70   2048.00   2039.35    1%        5     1% /was_trace/70
+/dev/backup_70   5120.00   4370.68   15%        7     1% /was_backup/70
+/dev/cores_70   5120.00   5097.98    1%        4     1% /was_cores/70
+/dev/sib_70     1024.00   1015.52    1%        4     1% /was_SIB/70
+/dev/pso_70     1024.00   1015.52    1%        4     1% /was_PSO/70
+/dev/sharedlib_70   1024.00   1015.52    1%        4     1% /was_sharedLib/70
+/dev/util_mware   2048.00   1685.35   18%     2853     1% /util/mware
+/dev/opt_wily   3072.00   3006.07    3%      262     1% /opt/wily
+
+SystemNo	13
+Environment	PERF
+LPAR	PN97PDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        2048.00   1676.06   19%    11737     3% /
+/dev/hd2        2624.00    266.42   90%    47157    42% /usr
+/dev/hd9var     1024.00    717.99   30%     5929     4% /var
+/dev/hd3        5120.00   4824.89    6%      889     1% /tmp
+/dev/hd1         128.00    127.26    1%      142     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    175.10   55%     8962    19% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     93.14   28%      250     2% /util
+/dev/auditfs     128.00      0.00  100%        7    22% /audit
+/dev/bmc        1024.00    422.24   59%     4738     5% /opt/bmc
+/dev/users       512.00    507.55    1%       12     1% /users
+/dev/local       512.00    406.98   21%      359     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.36    1%       14     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    549.31   87%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5094.36    1%       69     1% /database/oracle
+/dev/ora_exports  18432.00   5398.36   71%     7177     1% /ora_exports
+/dev/oracle    81920.00  43936.38   47%   140382     2% /oracle
+
+SystemNo	14
+Environment	PERF
+LPAR	PN98PDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        2048.00   1613.48   22%    11738     4% /
+/dev/hd2        2624.00    306.85   89%    47141    39% /usr
+/dev/hd9var     1024.00    724.32   30%     5923     4% /var
+/dev/hd3        5120.00   5109.96    1%       69     1% /tmp
+/dev/hd1         128.00    127.27    1%      140     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    175.10   55%     8962    19% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     93.62   27%      254     2% /util
+/dev/auditfs     128.00      0.00  100%        8    25% /audit
+/dev/bmc        1024.00    391.00   62%     4772     6% /opt/bmc
+/dev/users       512.00    507.55    1%       12     1% /users
+/dev/local       512.00    384.80   25%      407     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.43    1%       24     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00   4070.02    1%        5     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.18    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   4536.97   12%      720     1% /database/oracle
+/dev/ora_exports  18432.00   1236.34   94%     9068     3% /ora_exports
+/dev/oracle    81920.00  43418.85   47%   146398     2% /oracle
+
+SystemNo	15
+Environment	PERF
+LPAR	PN99PDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    150.53   58%    12087    26% /
+/dev/hd2        2624.00    357.49   87%    47044    36% /usr
+/dev/hd9var     2304.00   2002.85   14%     5941     2% /var
+/dev/hd3        1024.00   1013.90    1%       11     1% /tmp
+/dev/hd1         128.00    127.27    1%      141     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.55   54%     8940    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.34    2%       27     1% /DR
+/dev/TS_util     128.00     94.30   27%      253     2% /util
+/dev/auditfs     128.00     89.71   30%        8     1% /audit
+/dev/bmc        1024.00    478.53   54%     4776     5% /opt/bmc
+/dev/users       512.00    507.45    1%       65     1% /users
+/dev/local       512.00    507.35    1%       11     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    3072.00   3057.52    1%       11     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    663.71   84%        6     1% /local_backup
+/dev/apps         32.00     22.66   30%       24     1% /usr/apps
+/dev/bladelogic   2048.00   2042.17    1%      138     1% /bladelogic
+/dev/pmadmin    1024.00   1015.29    1%       94     1% /pmadmin
+/dev/appserver_70   6144.00   3792.39   39%    31391     4% /opt/WebSphere/70/AppServer
+/dev/deployment_70   6144.00   4078.63   34%    29208     4% /opt/WebSphere/70/DeploymentManager
+/dev/was_logs_70   3072.00   3032.15    2%       78     1% /was_logs/70
+/dev/app_prop_70    512.00    507.60    1%        4     1% /was_app_properties/70
+/dev/work_70    4096.00   4078.29    1%       10     1% /was_work/70
+/dev/stage_70   1024.00   1011.85    2%        6     1% /was_staging_area/70
+/dev/app_temp_70    512.00    507.60    1%        4     1% /app_temp/70
+/dev/archive_70   1024.00   1015.52    1%        4     1% /was_archive_area/70
+/dev/trace_70   2048.00   2039.34    1%        6     1% /was_trace/70
+/dev/backup_70   5120.00   3642.59   29%       10     1% /was_backup/70
+/dev/cores_70   5120.00   4338.04   16%       10     1% /was_cores/70
+/dev/sib_70     1024.00   1015.52    1%        4     1% /was_SIB/70
+/dev/pso_70     1024.00   1015.52    1%        4     1% /was_PSO/70
+/dev/sharedlib_70   1024.00   1015.52    1%        4     1% /was_sharedLib/70
+/dev/util_mware   2048.00   1684.43   18%     2897     1% /util/mware
+/dev/oracle11g   7680.00   3061.70   61%    12360     2% /oracle/product
+/dev/opt_wily   3072.00   3008.73    3%      257     1% /opt/wily
+/dev/infamdm   20000.00   9596.55   53%    21366     1% /opt/infamdm
+
+SystemNo	16
+Environment	PERF
+LPAR	PN9APDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    152.18   57%    11715    25% /
+/dev/hd2        2624.00    357.88   87%    47018    35% /usr
+/dev/hd9var     2304.00   2003.75   14%     5940     2% /var
+/dev/hd3        1024.00   1015.53    1%       13     1% /tmp
+/dev/hd1         128.00    127.27    1%      140     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8940    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.34    2%       27     1% /DR
+/dev/TS_util     128.00     94.35   27%      251     2% /util
+/dev/auditfs     128.00     85.26   34%        8     1% /audit
+/dev/bmc        1024.00    477.46   54%     4741     5% /opt/bmc
+/dev/users       512.00    507.48    1%       39     1% /users
+/dev/local       512.00    384.80   25%      406     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    3072.00   3057.17    1%      467     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    488.47   89%        6     1% /local_backup
+/dev/apps         32.00     22.66   30%       24     1% /usr/apps
+/dev/bladelogic   2048.00   2042.68    1%      119     1% /bladelogic
+/dev/pmadmin    1024.00   1015.31    1%       84     1% /pmadmin
+/dev/appserver_70   6144.00   3891.43   37%    31020     4% /opt/WebSphere/70/AppServer
+/dev/deployment_70   6144.00   6106.76    1%        3     1% /opt/WebSphere/70/DeploymentManager
+/dev/was_logs_70   3072.00   3035.98    2%       43     1% /was_logs/70
+/dev/app_prop_70    512.00    507.60    1%        4     1% /was_app_properties/70
+/dev/work_70    4096.00   4078.29    1%       10     1% /was_work/70
+/dev/stage_70   1024.00   1015.52    1%        4     1% /was_staging_area/70
+/dev/app_temp_70    512.00    507.60    1%        4     1% /app_temp/70
+/dev/archive_70   1024.00   1015.52    1%        4     1% /was_archive_area/70
+/dev/trace_70   2048.00   2039.34    1%        6     1% /was_trace/70
+/dev/backup_70   5120.00   4370.61   15%        7     1% /was_backup/70
+/dev/cores_70   5120.00   5097.98    1%        4     1% /was_cores/70
+/dev/sib_70     1024.00   1015.52    1%        4     1% /was_SIB/70
+/dev/pso_70     1024.00   1015.52    1%        4     1% /was_PSO/70
+/dev/sharedlib_70   1024.00   1015.52    1%        4     1% /was_sharedLib/70
+/dev/util_mware   2048.00   1685.36   18%     2851     1% /util/mware
+/dev/oracle11g   7680.00   3062.99   61%    12361     2% /oracle/product
+/dev/opt_wily   3072.00   3008.73    3%      257     1% /opt/wily
+/dev/infamdm   20000.00   9596.66   53%    21363     1% /opt/infamdm
+
+SystemNo	17
+Environment	PERF
+LPAR	PN9BPDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    153.99   57%    11570    24% /
+/dev/hd2        2624.00    376.40   86%    46628    34% /usr
+/dev/hd9var     1024.00    726.05   30%     5915     4% /var
+/dev/hd3        1024.00   1009.35    2%       23     1% /tmp
+/dev/hd1         128.00    127.27    1%      140     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.55   54%     8935    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.49    1%       27     1% /DR
+/dev/TS_util     128.00     94.55   27%      250     2% /util
+/dev/auditfs     128.00    101.41   21%        8     1% /audit
+/dev/bmc        1024.00    512.20   50%     4741     4% /opt/bmc
+/dev/users       512.00    502.18    2%       52     1% /users
+/dev/local       512.00    507.37    1%        8     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.46    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    683.88   84%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/bladelogic   2048.00   2047.27    1%       22     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       68     1% /pmadmin
+0055-nas-cl4-c2:/PM_MDM_WebSphere_NAS_Perf02 102400.00  82209.30   20%     8128     1% /opt/trillium
+
+SystemNo	18
+Environment	PERF
+LPAR	PN9CPDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         352.00    153.92   57%    11575    24% /
+/dev/hd2        2624.00    375.82   86%    46628    34% /usr
+/dev/hd9var     1024.00    725.32   30%     5916     4% /var
+/dev/hd3        1024.00   1010.18    2%       23     1% /tmp
+/dev/hd1         128.00    127.27    1%      140     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8935    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.49    1%       27     1% /DR
+/dev/TS_util     128.00     94.55   27%      250     2% /util
+/dev/auditfs     128.00     99.65   23%        8     1% /audit
+/dev/bmc        1024.00    510.83   51%     4687     4% /opt/bmc
+/dev/users       512.00    502.22    2%       43     1% /users
+/dev/local       512.00    384.81   25%      403     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    655.17   85%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/bladelogic   2048.00   2047.17    1%       23     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       68     1% /pmadmin
+0055-nas-cl4-c2:/PM_MDM_WebSphere_NAS_Perf02 102400.00  82209.30   20%     8128     1% /opt/trillium
+
+SystemNo	19
+Environment	DR
+LPAR	PN9DKDC
+
+SystemNo	20
+Environment	DR
+LPAR	PN9EKDC
+
+SystemNo	21
+Environment	DR
+LPAR	PN9FKDC
+
+SystemNo	22
+Environment	DR
+LPAR	PNA0KDC
+
+SystemNo	23
+Environment	PERF
+LPAR	PNA1PDC
+
+SystemNo	24
+Environment	PROD
+LPAR	PNA2PDC
+
+SystemNo	25
+Environment	PERF
+LPAR	PNA3PDC
+
+SystemNo	26
+Environment	PROD
+LPAR	PNA4PDC
+
+SystemNo	27
+Environment	TEST
+LPAR	PNA5KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        1120.00    921.55   18%    11672     6% /
+/dev/hd2        2624.00    273.05   90%    47121    41% /usr
+/dev/hd9var     1024.00    715.71   31%     8861     6% /var
+/dev/hd3        2048.00   2043.79    1%       11     1% /tmp
+/dev/hd1         128.00    127.30    1%      130     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     93.96   27%      250     2% /util
+/dev/auditfs     128.00    101.46   21%        8     1% /audit
+/dev/bmc        1024.00    463.76   55%     4691     5% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    382.31   26%      405     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    445.02   90%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.21    1%       19     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    15360.00  15297.34    1%        4     1% /oracle
+
+SystemNo	28
+Environment	TEST
+LPAR	PNA6KDC
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        1120.00    921.53   18%    11673     6% /
+/dev/hd2        2624.00    272.52   90%    47123    41% /usr
+/dev/hd9var     1024.00    715.67   31%     8862     6% /var
+/dev/hd3        2048.00   2043.79    1%       12     1% /tmp
+/dev/hd1         128.00    127.30    1%      131     1% /home
+/dev/hd11admin    128.00    127.64    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     384.00    177.52   54%     8934    18% /opt
+/dev/livedump    256.00    255.64    1%        4     1% /var/adm/ras/livedump
+/dev/DR           64.00     63.44    1%       27     1% /DR
+/dev/TS_util     128.00     93.96   27%      250     2% /util
+/dev/auditfs     128.00    101.45   21%        8     1% /audit
+/dev/bmc        1024.00    462.34   55%     4691     5% /opt/bmc
+/dev/users       512.00    507.56    1%        8     1% /users
+/dev/local       512.00    382.31   26%      405     1% /usr/local
+/dev/forensic     64.00     62.67    3%        4     1% /forensic
+/dev/var_tmp    1024.00   1015.45    1%        7     1% /var/tmp
+/dev/etc_perf    128.00    125.63    2%       11     1% /etc/perf
+/dev/local_bkp   4096.00    506.93   88%        6     1% /local_backup
+/dev/apps         32.00     31.17    3%        4     1% /usr/apps
+/dev/database   2048.00   2039.32    1%       13     1% /database
+/dev/bladelogic   2048.00   2047.14    1%       27     1% /bladelogic
+/dev/pmadmin    1024.00   1015.33    1%       70     1% /pmadmin
+/dev/db_oracle   5120.00   5098.89    1%        5     1% /database/oracle
+/dev/ora_exports  18432.00  18356.88    1%        4     1% /ora_exports
+/dev/oracle    15360.00  15297.34    1%        4     1% /oracle
+

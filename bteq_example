@@ -1,0 +1,31 @@
+.LOGON CDW/sql01,whynot;
+ Logon to TERADATA
+ 
+DATABASE SQL_Class;
+
+.EXPORT REPORT FILE = C:\EMPS.TXT
+
+SELECT * FROM Employee_Table;
+ This Export statement will be in field (REPORT) mode. The EMPS.TXT file will be created as a report.
+ 
+.IF ERRORCODE > 0 THEN .GOTO Done
+
+SELECT * FROM Department_Table;
+ BTEQ checks to ensure no errors occurred and selects more rows – else GOTO Done.
+ 
+.EXPORT RESET
+
+.LABEL Done
+
+.QUIT
+ Reverse previous export command and fall through to Done.
+ 
+ 
+ /*Setting format of output file*/ 
+.SET RECORDMODE OFF; 
+.SET FORMAT OFF ; 
+.SET TITLEDASHES OFF; 
+.SET SEPARATOR ','; 
+
+/* 
+

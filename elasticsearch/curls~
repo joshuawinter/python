@@ -1,0 +1,37 @@
+curl -XPUT VDDP13P-43EA50A.mis.lmig.com:9200/_river/customers/_meta -d'
+{
+    "type" : "csv",
+    "csv_file" : {
+        "folder" : "/data/workspace/python/elasticsearch/data",
+        "first_line_is_header":"true"
+    }
+}'
+
+curl -XPUT VDDP13P-43EA50A.mis.lmig.com:9200/_river/customers/_meta -d'
+{
+    "type" : "csv",
+    "csv_file" : {
+        "folder" : "/data/workspace/python/elasticsearch/data",
+        "filename_pattern" : ".*\\.csv$",
+        "poll":"5m",
+        "fields" : [
+        ],
+        "first_line_is_header" : "false",
+        "field_separator" : ",",
+        "escape_character" : ";",
+        "quote_character" : "'",
+        "field_id" : "id",
+        "concurrent_requests" : "1",
+        "script_before_all": "/path/to/before_all.sh",
+        "script_after_all": "/path/to/after_all.sh",
+        "script_before_file": "/path/to/before_file.sh",
+        "script_after_file": "/path/to/after_file.sh"
+    },
+    "index" : {
+        "index" : "my_csv_data",
+        "type" : "csv_type",
+        "bulk_size" : 100,
+        "bulk_threshold" : 10
+    }
+}'
+

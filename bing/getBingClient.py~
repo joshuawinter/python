@@ -1,0 +1,259 @@
+#!/usr/bin/env python
+
+__author__ = 'n0083510'
+
+
+# This program requires the following Python module:
+# ElementTree toolkit (http://effbot.org/downloads/#elementtree) for
+#     XML generation or document loading in Python.
+
+# This application expects the user name, password, and
+# developer token to be provided in the source below.
+# Command line usage: python GetHeaders.py
+#
+
+import elementtree.ElementTree as ET
+import requests
+import os
+import time
+
+# This example host is for the production environment.
+proxies = {"https":"https://n0083510:BigBen24@www-proxy:80"}
+host = "adcenterapi.microsoft.com"
+#url=https://adcenterapi.microsoft.com/Api/Advertiser/V8/Reporting/ReportingService.svc?wsdl
+# The Web service URI, proxy, and service operation definitions.
+URI = "https://" + host + "/Api/Advertiser/V8/"
+reportProxy = URI + "Reporting/ReportingService.svc?wsdl"
+
+
+# The version 8 namespace
+ns_report = "https://adcenter.microsoft.com/v8"
+
+# Choose a directory and filename where you will download the report
+#"c:\\reports\\keywordperf.zip"
+downloadFile = "C:\Users\N0083510\PycharmProjects\PyBase\data\keywordperf.zip"
+
+username = "api_libertym"
+password = "Liberty123"
+developertoken = "000I705XT9368869"
+accountId = "X0573057"
+campaignId = ""
+
+# Create a Web service client, and then execute the Reporting service
+# SubmitGenerateReport operation.
+def submitGenerateReport ():
+
+    soapStr = """<?xml version="1.0" encoding="utf-8"?>
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <s:Header>
+        <h:ApplicationToken i:nil="true" xmlns:h="https://adcenter.microsoft.com/v8" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:CustomerAccountId i:nil="true" xmlns:h="https://adcenter.microsoft.com/v8" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:CustomerId i:nil="true" xmlns:h="https://adcenter.microsoft.com/v8" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:DeveloperToken xmlns:h="https://adcenter.microsoft.com/v8">%s</h:DeveloperToken>
+        <h:Password xmlns:h="https://adcenter.microsoft.com/v8">%s</h:Password>
+        <h:UserName xmlns:h="https://adcenter.microsoft.com/v8">%s</h:UserName>
+      </s:Header>
+      <s:Body>
+        <SubmitGenerateReportRequest xmlns="https://adcenter.microsoft.com/v8">
+          <ReportRequest i:type="KeywordPerformanceReportRequest" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <Format>Xml</Format>
+            <Language i:nil="true" />
+            <ReportName>My Keyword Performance Report</ReportName>
+            <ReturnOnlyCompleteData>false</ReturnOnlyCompleteData>
+            <Aggregation>Daily</Aggregation>
+            <Columns>
+              <KeywordPerformanceReportColumn>TimePeriod</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>AccountId</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>CampaignId</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>Keyword</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>KeywordId</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>DeviceType</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>BidMatchType</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>Clicks</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>Impressions</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>Ctr</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>AverageCpc</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>Spend</KeywordPerformanceReportColumn>
+              <KeywordPerformanceReportColumn>QualityScore</KeywordPerformanceReportColumn>
+            </Columns>
+            <Filter>
+              <AdDistribution i:nil="true" />
+              <AdType i:nil="true" />
+              <BidMatchType i:nil="true" />
+              <Cashback i:nil="true" />
+              <DeliveredMatchType i:nil="true" />
+              <DeviceType>Computer SmartPhone</DeviceType>
+              <KeywordRelevance i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <Keywords i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <LandingPageRelevance i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <LandingPageUserExperience i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <LanguageAndRegion i:nil="true" />
+              <LanguageCode i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <QualityScore i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            </Filter>
+            <Scope>
+              <AccountIds i:nil="true" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+              <AdGroups i:nil="true" />
+              <Campaigns>
+                <CampaignReportScope>
+                  <ParentAccountId>%s</ParentAccountId>
+                  <CampaignId>%s</CampaignId>
+                </CampaignReportScope>
+              </Campaigns>
+            </Scope>
+            <Time>
+              <CustomDateRangeEnd i:nil="true" />
+              <CustomDateRangeStart i:nil="true" />
+              <PredefinedTime>Yesterday</PredefinedTime>
+            </Time>
+          </ReportRequest>
+        </SubmitGenerateReportRequest>
+      </s:Body>
+    </s:Envelope>""" % (developertoken, password, username, accountId, campaignId)
+
+
+    # Execute the Web service request.
+    data = soapStr
+    headers = {"Accept":"text/xml","Accept":"multipart/*","Content-type":"text/xml, charset=\"UTF-8\"","Content-length":"%d" % len(soapStr),"SOAPAction":"SubmitGenerateReport","HOST": str(host)}
+    r = requests.get(reportProxy, proxies=proxies, verify=False)
+    print r.text
+    
+submitGenerateReport()
+    
+    
+'''
+    _service = requests.post(reportProxy, data=data, proxies=proxies, headers=headers, verify=False)
+
+    # Get the response message and results.
+    statuscode, statusmessage, header = _service.he
+    res = _service.getfile().read()
+
+    response = None
+
+    if statusmessage == "OK":
+
+        response = ET.fromstring(res)
+
+    else:
+
+        # The method call failed.
+        print soapStr
+        print "SubmitGenerateReport failed.\n"
+        print "Status Code: ", statuscode, statusmessage, "\n"
+        print "Header: ", header, "\n"
+        print res
+
+        faultTree = ET.fromstring(res)
+        print faultTree.findtext(".//faultcode"), " ", \
+            faultTree.findtext(".//faultstring")
+
+    return response if response else None
+
+# Create a Web service client, and then execute the Reporting service
+# PollGenerateReport operation.
+
+def pollGenerateReport (reportRequestId):
+
+    soapStr = """<?xml version="1.0" encoding="utf-8"?>
+    <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <s:Header>
+        <h:ApplicationToken i:nil="true" xmlns:h="https://adcenter.microsoft.com/v8" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:CustomerAccountId i:nil="true" xmlns:h="https://adcenter.microsoft.com/v8" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:CustomerId i:nil="true" xmlns:h="https://adcenter.microsoft.com/v8" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:DeveloperToken xmlns:h="https://adcenter.microsoft.com/v8">%s</h:DeveloperToken>
+        <h:Password xmlns:h="https://adcenter.microsoft.com/v8">%s</h:Password>
+        <h:UserName xmlns:h="https://adcenter.microsoft.com/v8">%s</h:UserName>
+      </s:Header>
+      <s:Body>
+        <PollGenerateReportRequest xmlns="https://adcenter.microsoft.com/v8">
+          <ReportRequestId>%s</ReportRequestId>
+        </PollGenerateReportRequest>
+      </s:Body>
+    </s:Envelope>""" % (developertoken, password, username, reportRequestId)
+
+    # Create the Web service client, and then add the required headers.
+    #_service = httplib.HTTPS(host)
+    _service = httplib.HTTPConnection(proxy)
+    _service.set_tunnel(host)
+    _service.putrequest("POST", reportProxy)
+    _service.putheader("Accept","text/xml")
+    _service.putheader("Accept","multipart/*")
+    _service.putheader("Content-type", "text/xml; charset=\"UTF-8\"")
+    _service.putheader("Content-length", "%d" % len(soapStr))
+    _service.putheader("SOAPAction", "PollGenerateReport")
+    _service.putheader("HOST", str(host))
+    _service.endheaders()
+
+    # Execute the Web service request.
+    _service.send(soapStr)
+
+    # Get the response message and results.
+    statuscode, statusmessage, header = _service.getreply()
+    res = _service.getfile().read()
+
+    response = None
+
+    if statusmessage == "OK":
+
+        response = ET.fromstring(res)
+
+    else:
+
+        # The method call failed.
+        print soapStr
+        print "PollGenerateReport failed.\n"
+        print "Status Code: ", statuscode, "\n"
+        print "Header: ", header, "\n"
+        print res
+
+        faultTree = ET.fromstring(res)
+        print faultTree.findtext(".//faultcode"), " ", \
+            faultTree.findtext(".//faultstring")
+
+    return response if response else None
+
+
+if __name__ == "__main__":
+
+    # Call SubmitGenerateReport to retrieve the ReportRequestId
+    response = submitGenerateReport()
+    polling = 0
+    waitMinutes = 1
+
+    if response is not None:
+        reportRequestId = (response.findall(".//{" + ns_report + "}ReportRequestId"))[0].text
+        polling = 1
+
+    while (polling):
+
+        status = None
+        response = pollGenerateReport(reportRequestId)
+        if response is not None:
+            status = (response.findall(".//{" + ns_report + "}Status"))[0].text
+            print "Status: %s \n\r" % status
+
+        if (status == "Success"):
+            # Get the URL of the report to download.
+            downloadUrl = (response.findall(".//{" + ns_report + "}ReportDownloadUrl"))[0].text
+            print "Downloading From : %s\n\r" % downloadUrl
+
+            # Make sure that the destination directory exists
+            directory = os.path.dirname(downloadFile)
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+
+            urllib.urlretrieve(downloadUrl, downloadFile)
+
+            print "Report file written to %s.\n\n" % downloadFile
+
+            polling = 0
+
+        if (status != "Pending"):
+            polling = 0
+
+        if(polling):
+            # Wait a while before getting the status again.
+            time.sleep(waitMinutes * 60)
+
+    # end while
+'''

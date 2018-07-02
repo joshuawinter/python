@@ -1,0 +1,28 @@
+
+#!/usr/bin/python
+
+import pyodbc
+import csv
+from pprint import pprint
+
+
+pyodbc.pooling = False
+cnx = pyodbc.connect('DRIVER={Teradata};DBCNAME=tkpmqbicop1;UID=n0083510;PWD=jPrs2695;QUIETMODE=YES;', autocommit = True, ansi = True)
+cursor = cnx.cursor()
+cursor.execute("""SELECT NOTE_TEXT FROM PM_EDW_TBS_PMIT_D.jwp_ENDECA_CLAIMS_NOTES_v WHERE NOTE_DATE = '2012-10-03'""")
+
+
+'''
+rows = cursor.fetchall()
+for row in rows:        
+   pprint(row)
+
+
+'''
+with open('/home/n0083510/workspace/python/NOTES.data', 'w') as source_file:
+    csv.writer(source_file, quoting=csv.QUOTE_NONNUMERIC).writerows(cursor)
+source_file.close()
+
+
+
+
